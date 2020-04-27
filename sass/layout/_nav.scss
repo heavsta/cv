@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    &__text {
+        display: none;
+    }
+    &__item {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding-left: 30px;
+        padding-right: 5px;
+        transition: 1s;
+        & a {
+            text-decoration: none;
+            color: $clr-text;
+            &:hover {
+                color: $clr-strong;
+                .navbar__text {
+                    transition: transform 500ms;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

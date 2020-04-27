@@ -1,0 +1,17 @@
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 14em;
+    }
+}
+
+@keyframes cursorBlinking {
+    from {
+        border-right-color: #ffffff;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}

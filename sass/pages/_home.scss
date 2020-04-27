@@ -1,0 +1,40 @@
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-image: url('../img/coffee.jpg');
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    min-height: 110vh;
+}
+
+.intro {
+    position: relative;
+    padding-left: 25vw;
+}
+
+.hello {
+    position: relative;
+    bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.line {
+    position: relative;
+    bottom: 20px;
+    width: 14em;
+    border-right: 2px solid #ffffff;
+    word-wrap: normal;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing {
+    animation: typewriter 5s steps(41) 1s 1 normal both,
+    cursorBlinking 500ms steps(41) infinite normal;
+}
