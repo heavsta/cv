@@ -15,3 +15,34 @@
         border-right-color: transparent;
     }
 }
+
+@keyframes navappear {
+    from {
+        transform-origin: right;
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes colourswitch {
+    0% {
+        color: rgb(30, 255, 199);
+    }
+    20% {
+        color: yellow;
+    }
+    40% {
+        color: red;
+    }
+    60% {
+        color: blue;
+    }
+    80% {
+        color: #ffffff;
+    }
+    100% {
+        color: rgb(30, 255, 199);
+    }
+}

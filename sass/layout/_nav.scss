@@ -3,6 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    padding-right: 20px;
+    .fas {
+        &:not(:hover) {
+            animation: colourswitch 15s  7s infinite;
+        }
+    }
     &__text {
         display: none;
     }
@@ -15,13 +21,13 @@
         transition: 1s;
         & a {
             text-decoration: none;
-            color: $clr-text;
-            &:hover {
-                color: $clr-strong;
-                .navbar__text {
-                    transition: transform 500ms;
+            color: $clr-strong;
+            &:hover .fas {
+                color: pink;
+            }
+            &:hover .navbar__text {
                     display: inline-block;
-                }
+                    animation: navappear 500ms;
             }
         }
     }
