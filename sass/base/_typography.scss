@@ -6,8 +6,17 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+    font-size: 3.5rem;
+}
+
 strong {
     color: $clr-strong;
+}
+
+em {
+    font-weight: bold;
+    font-style: normal;
 }
 
 .logo {

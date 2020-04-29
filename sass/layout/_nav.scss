@@ -6,7 +6,7 @@
     padding-right: 20px;
     .fas {
         &:not(:hover) {
-            animation: colourswitch 15s  12s infinite;
+            animation: colourswitch 7s infinite;
         }
     }
     &__text {
@@ -24,7 +24,8 @@
             text-decoration: none;
             color: $clr-strong;
             &:hover .fas {
-                color: #ffffff;
+                color: pink;
+                animation: rotation 800ms;
             }
             &:hover .navbar__text {
                     display: inline-block;

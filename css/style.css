@@ -33,22 +33,21 @@
 }
 @keyframes colourswitch {
   0% {
+    color: #ffffff;
+  }
+  50% {
     color: #1effc7;
-  }
-  20% {
-    color: yellow;
-  }
-  40% {
-    color: red;
-  }
-  60% {
-    color: blue;
-  }
-  80% {
-    color: pink;
   }
   100% {
-    color: #1effc7;
+    color: #ffffff;
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 *,
@@ -82,6 +81,17 @@ body::-webkit-scrollbar-thumb {
   background: #E8E6E3;
 }
 
+hr {
+  width: 150px;
+  margin-bottom: 50px;
+  padding-bottom: 2px;
+}
+
+article {
+  width: 80%;
+  margin: auto;
+}
+
 body {
   font-family: "Manrope", sans-serif;
 }
@@ -90,8 +100,17 @@ p {
   font-family: "Open Sans", sans-serif;
 }
 
+h1 {
+  font-size: 3.5rem;
+}
+
 strong {
   color: #E8E6E3;
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
 }
 
 .logo-text {
@@ -111,6 +130,10 @@ header {
   align-items: flex-start;
 }
 
+.logo {
+  padding-left: 20px;
+}
+
 .navbar {
   display: flex;
   flex-direction: column;
@@ -119,7 +142,7 @@ header {
   padding-right: 20px;
 }
 .navbar .fas:not(:hover) {
-  animation: colourswitch 15s 12s infinite;
+  animation: colourswitch 7s infinite;
 }
 .navbar__text {
   display: none;
@@ -138,14 +161,15 @@ header {
   color: #E8E6E3;
 }
 .navbar__item a:hover .fas {
-  color: #ffffff;
+  color: pink;
+  animation: rotation 800ms;
 }
 .navbar__item a:hover .navbar__text {
   display: inline-block;
   animation: textappear 500ms;
 }
 
-header::before {
+header::before, header::after {
   content: "";
   position: absolute;
   top: 0;
@@ -153,16 +177,23 @@ header::before {
   right: 0;
   bottom: 0;
   display: block;
+  height: 100vh;
   background-image: url("../img/coffee.jpg");
   background-position: center;
   background-size: cover;
+  opacity: 0.5;
   z-index: -1;
-  min-height: 110vh;
+}
+
+header {
+  height: 40vh;
 }
 
 .intro {
   position: relative;
+  display: block;
   padding-left: 25vw;
+  height: 60vh;
 }
 
 .hello {
@@ -183,6 +214,45 @@ header::before {
 
 .typing {
   animation: typewriter 4s steps(41) 1s 1 normal both, cursorBlinking 500ms steps(41) infinite normal;
+}
+
+.rotate {
+  transform: rotate(-30deg);
+}
+
+.whitebanner {
+  background-color: #CECAC7;
+}
+
+.aboutme {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.aboutme .text {
+  width: 50%;
+}
+.aboutme .pic {
+  width: 40%;
+}
+.aboutme h2 {
+  padding-bottom: 20px;
+}
+.aboutme .description {
+  font-size: 1.2rem;
+}
+
+.picture {
+  width: 100%;
+  margin: 50px;
+}
+.picture-image {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border-radius: 25021997px;
 }
 
 /*# sourceMappingURL=style.css.map */
