@@ -54,6 +54,8 @@ header {
     background-color: $clr-body2;
 }
 
+/* ABOUT ME */
+
 .aboutme {
     display: flex;
     justify-content: space-evenly;
@@ -82,5 +84,36 @@ header {
         top: 0;
         width: 100%;
         border-radius: 25021997px;
+    }
+}
+
+/* CONTACT */
+
+.contact {
+    height: 100vh;
+    background: url(../img/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    &-info {
+        transform: rotate(-29.5deg);
+        position: relative;
+        top: 8%;
+        left: 10%;
+        font-size: 2.5rem;
+        &__numbers {
+            transform: rotate(-30deg);
+            position: relative;
+            top: 16%;
+            left: 8%;
+            font-size: 1.5rem;
+            line-height: 3rem;
+            a {
+                text-decoration: none;
+                color: $clr-text;
+                &:hover {
+                    color: $clr-mint;
+                }
+            }
+        }
     }
 }

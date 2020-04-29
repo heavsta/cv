@@ -61,7 +61,7 @@
 body {
   background-color: #181A1B;
   color: #7a7a7c;
-  font-size: 2rem;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
   perspective: 1px;
@@ -224,6 +224,7 @@ header {
   background-color: #CECAC7;
 }
 
+/* ABOUT ME */
 .aboutme {
   display: flex;
   justify-content: space-evenly;
@@ -253,6 +254,36 @@ header {
   top: 0;
   width: 100%;
   border-radius: 25021997px;
+}
+
+/* CONTACT */
+.contact {
+  height: 100vh;
+  background: url(../img/contact.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.contact-info {
+  transform: rotate(-29.5deg);
+  position: relative;
+  top: 8%;
+  left: 10%;
+  font-size: 2.5rem;
+}
+.contact-info__numbers {
+  transform: rotate(-30deg);
+  position: relative;
+  top: 16%;
+  left: 8%;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+.contact-info__numbers a {
+  text-decoration: none;
+  color: #7a7a7c;
+}
+.contact-info__numbers a:hover {
+  color: rgba(39, 245, 194, 0.664);
 }
 
 /*# sourceMappingURL=style.css.map */
