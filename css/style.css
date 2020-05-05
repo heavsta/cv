@@ -571,25 +571,25 @@ header {
   top: -14%;
   left: 12%;
 }
-@media all and (max-width: 1366px) {
+@media all and (min-width: 1366px) {
   .contact-info {
     top: -8%;
     left: 10%;
   }
 }
-@media all and (max-width: 1920px) {
+@media all and (min-width: 1920px) {
   .contact-info {
-    top: -4%;
+    top: -2%;
     left: 10%;
     font-size: 3.5rem;
   }
 }
-@media all and (max-width: 1440px) {
+@media all and (min-width: 1440px) {
   .contact-info {
-    top: 6%;
+    top: -6%;
   }
 }
-@media all and (max-width: 1536px) {
+@media all and (min-width: 1536px) {
   .contact-info {
     font-size: 3rem;
     top: -6%;
@@ -603,13 +603,21 @@ header {
   font-size: 1.5rem;
   line-height: 3rem;
 }
-@media all and (max-width: 1366px) {
+@media all and (min-width: 1366px) {
   .contact-info__numbers {
     top: -1%;
     left: 10%;
   }
 }
-@media all and (max-width: 1920px) {
+@media all and (min-width: 1440px) {
+  .contact-info__numbers {
+    left: 6%;
+    top: 5%;
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+  }
+}
+@media all and (min-width: 1920px) {
   .contact-info__numbers {
     top: 5%;
     left: 10%;
@@ -617,9 +625,10 @@ header {
     line-height: 4rem;
   }
 }
-@media all and (max-width: 1536px) {
+@media all and (min-width: 1536px) {
   .contact-info__numbers {
     top: 2%;
+    left: 9%;
     font-size: 2rem;
   }
 }

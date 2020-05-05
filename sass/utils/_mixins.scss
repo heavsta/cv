@@ -1,5 +1,5 @@
 @mixin mQ($arg){
-    @media all and (max-width: $arg) {
+    @media all and (min-width: $arg) {
         @content;
     }
 }
