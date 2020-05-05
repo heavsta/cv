@@ -55,3 +55,21 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes scrolling {
+    0% {
+        top: -5px;
+        left: -5px;
+        opacity: 0;
+    }
+    50% {
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    }
+    100% {
+        top: 5px;
+        left: 5px;
+        opacity: 0;
+    }
+}

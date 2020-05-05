@@ -50,6 +50,41 @@ header {
     transform: rotate(-30deg);
 }
 
+.scrolldown {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-80px) translateX(-50%) rotate(45deg);
+    span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-bottom: 2px solid $clr-strong;
+        border-right: 2px solid $clr-strong;
+        animation: scrolling 1.4s linear infinite;
+        &:nth-child(1) {
+            transform: translate(-15px,-15px);
+            opacity: 0;
+            animation-delay: 9s;
+        }
+        &:nth-child(2) {
+            transform: translate(0,0);
+            opacity: 0;
+            animation-delay: 9.3s;
+        }
+        &:nth-child(3) {
+            transform: translate(15px,15px);
+            opacity: 0;
+            animation-delay: 9.6s;
+        }
+    }
+}
+
 .whitebanner {
     background-color: $clr-body2;
 }
