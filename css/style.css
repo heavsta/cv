@@ -149,6 +149,7 @@ header {
 
 .logo {
   padding-left: 20px;
+  padding-top: 20px;
 }
 
 .navbar {
@@ -293,6 +294,7 @@ header {
 }
 .aboutme .description {
   font-size: 1.2rem;
+  padding-bottom: 16px;
 }
 
 .picture {
@@ -569,6 +571,30 @@ header {
   top: -14%;
   left: 12%;
 }
+@media all and (max-width: 1366px) {
+  .contact-info {
+    top: -8%;
+    left: 10%;
+  }
+}
+@media all and (max-width: 1920px) {
+  .contact-info {
+    top: -4%;
+    left: 10%;
+    font-size: 3.5rem;
+  }
+}
+@media all and (max-width: 1440px) {
+  .contact-info {
+    top: 6%;
+  }
+}
+@media all and (max-width: 1536px) {
+  .contact-info {
+    font-size: 3rem;
+    top: -6%;
+  }
+}
 .contact-info__numbers {
   transform: rotate(-30deg);
   position: relative;
@@ -576,6 +602,26 @@ header {
   top: -5%;
   font-size: 1.5rem;
   line-height: 3rem;
+}
+@media all and (max-width: 1366px) {
+  .contact-info__numbers {
+    top: -1%;
+    left: 10%;
+  }
+}
+@media all and (max-width: 1920px) {
+  .contact-info__numbers {
+    top: 5%;
+    left: 10%;
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}
+@media all and (max-width: 1536px) {
+  .contact-info__numbers {
+    top: 2%;
+    font-size: 2rem;
+  }
 }
 .contact-info__numbers a {
   text-decoration: none;
