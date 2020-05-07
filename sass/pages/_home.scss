@@ -845,6 +845,7 @@ header {
             transform: none;
             text-align: center;
             background-color: #fff;
+            padding-top: 2vh;
             width: 95%;
             margin: auto;
             border-radius: 4px 4px 0 0;
@@ -853,9 +854,10 @@ header {
                 transform: none;
                 font-size: 1rem;
                 line-height: 2rem;
-                text-align: center;
+                text-align: left;
                 background-color: #fff;
-                width: 95%;
+                width: 85%;
+                padding: 5%;
                 margin: auto;
                 border-radius: 0 0 4px 4px;
                 a {
