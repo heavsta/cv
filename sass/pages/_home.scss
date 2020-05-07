@@ -10,7 +10,7 @@ header::before, header::after {
     background-image: url('../img/coffee.jpg');
     background-position: center;
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.4;
     z-index: -1;
 }
 
@@ -21,7 +21,6 @@ header {
 .intro {
     position: relative;
     display: block;
-    padding-left: 25vw;
     height: 60vh;
 }
 
@@ -29,12 +28,15 @@ header {
     position: relative;
     bottom: 20px;
     padding-bottom: 15px;
+    text-align: center;
 }
 
 .line {
     position: relative;
     bottom: 20px;
     width: 14em;
+    margin-left: auto;
+    margin-right: auto;
     border-right: 2px solid #ffffff;
     word-wrap: normal;
     white-space: nowrap;
@@ -470,6 +472,9 @@ header {
 }
 
 @media all and (max-width: 600px) {
+
+    /* HEADER/NAV */
+
     .logo {
         margin-left: auto;
         margin-right: auto;
@@ -479,6 +484,15 @@ header {
         display: none;
     }
 
+    /*INTRO*/
+
+    .hello {
+        font-size: 1.5em;
+    }
+
+    .line {
+        font-size: 1.5em;
+    }
 
     /* ABOUT ME */
 
@@ -837,6 +851,7 @@ header {
             text-align: center;
             margin: auto;
             padding-top: 10vh;
+            padding-bottom: 5vh;
         }
         &-info {
             font-size: 2rem;
