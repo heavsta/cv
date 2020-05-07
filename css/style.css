@@ -104,11 +104,6 @@ hr {
   padding-bottom: 2px;
 }
 
-.aboutme {
-  width: 80%;
-  margin: auto;
-}
-
 body {
   font-family: "Manrope", sans-serif;
 }
@@ -278,13 +273,26 @@ header {
 }
 
 /* ABOUT ME */
+.whitebanner .title {
+  position: absolute;
+  left: 12%;
+  padding-top: 10vh;
+}
+
 .aboutme {
+  padding-top: 20vh;
+  width: 80%;
+  margin: auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 .aboutme .text {
   width: 50%;
+  padding-bottom: 10vh;
+}
+.aboutme .text .sectiontitle {
+  padding-top: 10vh;
 }
 .aboutme .pic {
   width: 40%;
@@ -300,6 +308,7 @@ header {
 .picture {
   width: 100%;
   margin: 50px;
+  margin-top: 0;
 }
 .picture-image {
   display: block;
@@ -571,6 +580,13 @@ header {
   top: -14%;
   left: 12%;
 }
+@media all and (min-width: 1024px) {
+  .contact-info {
+    top: 9%;
+    left: -4%;
+    font-size: 3.5rem;
+  }
+}
 @media all and (min-width: 1366px) {
   .contact-info {
     top: -8%;
@@ -602,6 +618,14 @@ header {
   top: -5%;
   font-size: 1.5rem;
   line-height: 3rem;
+}
+@media all and (min-width: 1024px) {
+  .contact-info__numbers {
+    top: 12%;
+    left: 1%;
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
 }
 @media all and (min-width: 1366px) {
   .contact-info__numbers {
@@ -638,6 +662,170 @@ header {
 }
 .contact-info__numbers a:hover {
   color: rgba(39, 245, 194, 0.664);
+}
+
+@media all and (max-width: 600px) {
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav {
+    display: none;
+  }
+
+  /* ABOUT ME */
+  .whitebanner {
+    display: flex;
+    flex-direction: column;
+  }
+  .whitebanner .title {
+    position: unset;
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .aboutme {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 0;
+  }
+  .aboutme h2 {
+    text-align: center;
+  }
+  .aboutme .text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: justify;
+    padding-bottom: 10vh;
+    order: 2;
+  }
+  .aboutme .pic {
+    width: 90%;
+    order: 1;
+  }
+  .aboutme h2 {
+    padding-bottom: 20px;
+  }
+  .aboutme .description {
+    font-size: 1.2rem;
+    padding-bottom: 16px;
+  }
+
+  .picture {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 30px;
+  }
+  .picture-image {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-radius: 25021997px;
+  }
+
+  .sectiontitle {
+    text-align: center;
+    margin-left: auto;
+  }
+
+  hr {
+    margin: auto;
+    margin-bottom: 50px;
+    padding-bottom: 2px;
+  }
+
+  /* EXPERIENCE */
+  .experience .title {
+    position: absolute;
+    margin: auto;
+    left: 0%;
+    padding-top: 10vh;
+    font-size: 1rem;
+  }
+
+  .banner {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .banner video {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 80vh;
+    pointer-events: none;
+    opacity: 0.1;
+  }
+  .banner .content {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    text-align: center;
+    padding-bottom: 15vh;
+  }
+  .banner .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    color: #E8E6E3;
+  }
+  .banner .content p {
+    font-size: 1.5rem;
+  }
+
+  .banner2 {
+    width: 100%;
+    height: 120vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner2-half {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner2-half video {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 60vh;
+    pointer-events: none;
+    opacity: 0.1;
+  }
+  .banner2-half .content {
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+    text-align: center;
+  }
+  .banner2-half .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    color: #E8E6E3;
+  }
+  .banner2-half .content p {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
