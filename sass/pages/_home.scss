@@ -827,5 +827,48 @@ header {
         }
     }
     
-    
+    /* CONTACT */
+
+    .contact {
+        height: 100vh;
+        background: none;
+        .title {
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            padding-top: 10vh;
+        }
+        &-info {
+            font-size: 2rem;
+            padding-bottom: 2vh;
+            position: static;
+            transform: none;
+            text-align: center;
+            background-color: #fff;
+            width: 95%;
+            margin: auto;
+            border-radius: 4px 4px 0 0;
+            &__numbers {
+                position: static;
+                transform: none;
+                font-size: 1rem;
+                line-height: 2rem;
+                text-align: center;
+                background-color: #fff;
+                width: 95%;
+                margin: auto;
+                border-radius: 0 0 4px 4px;
+                a {
+                    text-decoration: none;
+                    color: $clr-text;
+                    &:focus {
+                        color: $clr-mint;
+                    }
+                }
+            }
+        }
+        strong {
+            color: #181A1B;
+        }
+    }
 }

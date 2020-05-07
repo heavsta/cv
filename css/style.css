@@ -1011,6 +1011,50 @@ header {
     padding-right: 10px;
     padding-left: 10px;
   }
+
+  /* CONTACT */
+  .contact {
+    height: 100vh;
+    background: none;
+  }
+  .contact .title {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding-top: 10vh;
+  }
+  .contact-info {
+    font-size: 2rem;
+    padding-bottom: 2vh;
+    position: static;
+    transform: none;
+    text-align: center;
+    background-color: #fff;
+    width: 95%;
+    margin: auto;
+    border-radius: 4px 4px 0 0;
+  }
+  .contact-info__numbers {
+    position: static;
+    transform: none;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: center;
+    background-color: #fff;
+    width: 95%;
+    margin: auto;
+    border-radius: 0 0 4px 4px;
+  }
+  .contact-info__numbers a {
+    text-decoration: none;
+    color: #7a7a7c;
+  }
+  .contact-info__numbers a:focus {
+    color: rgba(39, 245, 194, 0.664);
+  }
+  .contact strong {
+    color: #181A1B;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
