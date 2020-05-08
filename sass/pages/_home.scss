@@ -22,21 +22,19 @@ header {
     position: relative;
     display: block;
     height: 60vh;
+    padding-left: 25vw;
 }
 
 .hello {
     position: relative;
     bottom: 20px;
     padding-bottom: 15px;
-    text-align: center;
 }
 
 .line {
     position: relative;
     bottom: 20px;
     width: 14em;
-    margin-left: auto;
-    margin-right: auto;
     border-right: 2px solid #ffffff;
     word-wrap: normal;
     white-space: nowrap;
@@ -486,12 +484,19 @@ header {
 
     /*INTRO*/
 
+    .intro {
+        padding-left: 0;
+    }
+
     .hello {
         font-size: 1.5em;
+        text-align: center;
     }
 
     .line {
         font-size: 1.5em;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /* ABOUT ME */
@@ -813,7 +818,8 @@ header {
                             padding-bottom: 10px;
                         }
                         .column {
-                            width: 50%;
+                            width: 100%;
+                            padding-bottom: 25px;
                             .icons {
                                 display: flex;
                                 justify-content: space-around;
@@ -871,7 +877,7 @@ header {
                 background-color: #fff;
                 width: 85%;
                 padding: 5%;
-                padding-top: 3%;
+                padding-top: 1%;
                 margin: auto;
                 border-radius: 0 0 4px 4px;
                 a {
