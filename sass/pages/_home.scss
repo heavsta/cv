@@ -507,7 +507,7 @@ header {
         .title {
             position: unset;
             display: block;
-            margin-bottom: 0;
+            margin-bottom: 25px;
         }
     }
 
@@ -566,9 +566,7 @@ header {
     }
 
     hr {
-        margin: auto;
-        margin-bottom: 50px;
-        padding-bottom: 2px;
+        display: none;
     }
 
 
@@ -672,6 +670,7 @@ header {
     .path {
         h1 {
             text-align: center;
+            padding-bottom: 25px;
         }
     }
 
@@ -855,7 +854,7 @@ header {
             text-align: center;
             margin: auto;
             padding-top: 10vh;
-            padding-bottom: 5vh;
+            padding-bottom: 8vh;
         }
         &-info {
             font-size: 2rem;
