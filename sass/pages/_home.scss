@@ -501,8 +501,38 @@ header {
     }
 
     .scrolldown {
-        width: 20px;
-        height: 20px;
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        width: 25px;
+        height: 25px;
+        transform: translateY(-80px) translateX(-50%) rotate(45deg);
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-bottom: 2px solid $clr-strong;
+            border-right: 2px solid $clr-strong;
+            animation: scrolling 1.4s linear infinite;
+            &:nth-child(1) {
+                transform: translate(-15px,-15px);
+                opacity: 0;
+                animation-delay: 6s;
+            }
+            &:nth-child(2) {
+                transform: translate(0,0);
+                opacity: 0;
+                animation-delay: 6.3s;
+            }
+            &:nth-child(3) {
+                transform: translate(15px,15px);
+                opacity: 0;
+                animation-delay: 6.6s;
+            }
+        }
     }
 
     /* ABOUT ME */
