@@ -677,10 +677,10 @@ header {
         .timeline-body {
             position: relative;
             background-color: #ffffff;
-            margin-left: 50px;
+            margin-left: 0;
             border-radius: 0 8px 8px 0;
             padding: 5px 0;
-            min-width: 90%;
+            max-width: 83%;
             &::after {
                 content: '';
                 width: 4px;
@@ -706,15 +706,14 @@ header {
                 }
                 .time {
                     position: absolute;
-                    left: -85px;
-                    top: 4px;
+                    left: 40px;
+                    top: -20px;
                     opacity: 0.5;
                     font-size: 13px;
+                    z-index: 12;
                 }
                 .content {
                     margin: 40px;
-                    padding-bottom: 20px;
-                    border-bottom: 1px dashed black;
                     .title {
                         font-weight: 500;
                         margin-bottom: 15px;
@@ -725,10 +724,10 @@ header {
         .timeline-body--left {
             position: relative;
             background-color: #ffffff;
-            margin-left: 50px;
+            margin: 0;
             border-radius: 0 8px 8px 0;
             padding: 5px 0;
-            min-width: 90%;
+            min-width: 83%;
             &::after {
                 content: '';
                 width: 4px;
@@ -754,15 +753,14 @@ header {
                 }
                 .time {
                     position: absolute;
-                    left: -85px;
-                    top: 4px;
+                    left: 40px;
+                    top: -20px;
                     opacity: 0.5;
                     font-size: 13px;
+                    z-index: 12;
                 }
                 .content {
                     margin: 40px;
-                    padding-bottom: 20px;
-                    border-bottom: 1px dashed black;
                     text-align: left;
                     .title {
                         font-weight: 500;
@@ -855,12 +853,12 @@ header {
         }
         &-info {
             font-size: 2rem;
-            padding-bottom: 2vh;
+            padding-bottom: 1vh;
             position: static;
             transform: none;
             text-align: center;
             background-color: #fff;
-            padding-top: 2vh;
+            padding-top: 3vh;
             width: 95%;
             margin: auto;
             border-radius: 4px 4px 0 0;
@@ -873,6 +871,7 @@ header {
                 background-color: #fff;
                 width: 85%;
                 padding: 5%;
+                padding-top: 3%;
                 margin: auto;
                 border-radius: 0 0 4px 4px;
                 a {
